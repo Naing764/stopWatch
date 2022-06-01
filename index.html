@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    
+    
+    body ::before{
+        content: '';
+        z-index: -1;
+        top:0;
+        left:0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1652534606221-9ea9adc8641c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    h1 {
+        background: -webkit-linear-gradient(45deg,rgb(250, 146, 0), rgb(0, 17, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 text-center my-5  mx-auto">
+                <h1 class="display-3">Stop Watch</h1>
+                <div class="my-3  h1">
+                    <span id="second">00</span>
+                    <span>:</span>
+                    <span id="min-sec">00</span>
+                </div>
+                <button id="start-button" class="btn btn-success btn-lg">
+                    Start
+                </button >
+                <button id="stop-button"  class="btn btn-success btn-lg mx-lg-5">
+                    Stop
+                </button>
+                <button id="reset-button"  class="btn btn-success btn-lg">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
